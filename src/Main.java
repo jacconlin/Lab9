@@ -1,8 +1,11 @@
+import java.util.Arrays;
 
-public class Main {
+    public static void main() throws IOException {
+        CodonEntry replicase = new CodonEntry("replicase.fasta");
+        CodonEntry spike = new CodonEntry("spike.fasta");
 
-    //hello fellow scallywags
-    //test
+        System.out.println("the replicase codons: " + replicase.codons);
+        System.out.println("the spike codons: " + spike.codons);
+    }
 
-    //youssef
-}
+

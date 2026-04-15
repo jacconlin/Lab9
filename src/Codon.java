@@ -9,10 +9,10 @@ public class Codon
     private final String amino_name;
     private final String aa_abbrev;
 
-    public Codon(String sequence, String amino_Name, String aa_abbrev) {
+    public Codon(String sequence) {
         this.sequence = sequence;
-        this.amino_name = amino_Name;
-        this.aa_abbrev = aa_abbrev;
+        this.amino_name = "o";
+        this.aa_abbrev = "o";
     }
 
     public String getSequence()
@@ -28,5 +28,11 @@ public class Codon
     public String getAa_abbrev()
     {
         return this.aa_abbrev;
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.sequence;
     }
 }
