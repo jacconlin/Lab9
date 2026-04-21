@@ -1,6 +1,7 @@
-import java.util.Arrays;
+import java.io.*;
 
-    public static void main() throws IOException {
+    public static void main() throws IOException
+    {
         CodonEntry replicase = new CodonEntry("replicase.fasta");
         CodonEntry spike = new CodonEntry("spike.fasta");
 
